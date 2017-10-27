@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Test</title>
-    </head>
-    <body>
-        <h1>Hey, this is a test.</h1>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+    <div id="app">
+        <span v-bind:title="message">
+            Hover your mose over me for a few seconds to see my dynamically bound title!
+        </span>
+    </div>
+
+    <script src="https://vuejs.org/js/vue.min.js"></script>
+    <script src="https://unpkg.com/vue-router@2.0.0/dist/vue-router.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
 </html>
