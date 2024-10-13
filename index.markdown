@@ -17,3 +17,4 @@ I hold a **BSc in Computer Science from EPFL** with an exchange year at Imperial
 ## [Fisher Flow Matching for Generative Modeling over Discrete Data](https://arxiv.org/abs/2405.14664){:target="_blank"}
 - **Davis, O.**, Kessler, S., Petrache, M., Ceylan, İ., Bronstein, M., Bose, AJ.
 - NeurIPS 2024. Preprint at: [https://arxiv.org/abs/2405.14664](https://arxiv.org/abs/2405.14664).
+![Fisher Flow Matching summary.](/assets/fisher_flow.png)
