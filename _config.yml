@@ -21,11 +21,12 @@
 title: Oscar Davis
 email: oscar.davis@cs.ox.ac.uk
 description: >- # this means to ignore newlines until "baseurl:"
-  PhD in Machine Learning at the University of Oxford – generative AI.
+  PhD in Machine Learning at the University of Oxford – generative modelling.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: osclsd
 github_username:  olsdavis
+future: true
 
 # Build settings
 theme: jekyll-theme-cayman
