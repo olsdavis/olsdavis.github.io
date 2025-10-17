@@ -12,7 +12,7 @@ I hold a **BSc in Computer Science from EPFL** with an exchange year at Imperial
 
 # Publications
 
-## Generalised Flow Maps for Few-Step Generative Modelling on Riemannian Manifolds
+## [Generalised Flow Maps for Few-Step Generative Modelling on Riemannian Manifolds](https://openreview.net/pdf?id=1YHF7B8Yjk){:target="_blank"}
 - **Davis, O.**, Boffi, N., Albergo, M., Bronstein, M., Bose, J.
 - NeurIPS 2025 FPI + pre-print coming soon!
 ![Generalised Flow Maps, Earth plot.](/assets/gfm_earth.png)
