@@ -31,3 +31,8 @@ I hold a **BSc in Computer Science from EPFL** with an exchange year at Imperial
 - **Davis, O.**, Kessler, S., Petrache, M., Ceylan, İ., Bronstein, M., Bose, AJ.
 - NeurIPS 2024. Preprint at: [https://arxiv.org/abs/2405.14664](https://arxiv.org/abs/2405.14664).
 ![Fisher Flow Matching summary.](/assets/fisher_flow.png)
+
+# Projects
+
+## IMM re-implementation
+As the [Inductive Moment Matching paper](https://arxiv.org/abs/2503.07565){:target="_blank"} came out in March, I originally re-implemented it for FORT from scratch. Although it has been a while, I thought it would be useful to share the code, as it is efficient, modular and organised. You can find it here: [github.com/olsdavis/imm](https://github.com/olsdavis/imm){:target="_blank"}. Enjoy! :)
