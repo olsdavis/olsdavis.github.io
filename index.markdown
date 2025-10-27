@@ -12,14 +12,17 @@ I hold a **BSc in Computer Science from EPFL** with an exchange year at Imperial
 
 # Publications
 
-## [Generalised Flow Maps for Few-Step Generative Modelling on Riemannian Manifolds](https://openreview.net/pdf?id=1YHF7B8Yjk){:target="_blank"}
+## [Generalised Flow Maps for Few-Step Generative Modelling on Riemannian Manifolds](https://arxiv.org/abs/2510.21608){:target="_blank"}
 - **Davis, O.**, Boffi, N., Albergo, M., Bronstein, M., Bose, J.
-- NeurIPS 2025 FPI + pre-print coming soon!
-![Generalised Flow Maps, Earth plot.](/assets/gfm_earth.png)
+- NeurIPS 2025 FPI.
+- arXiv: [https://arxiv.org/abs/2510.21608](https://arxiv.org/abs/2510.21608){:target="_blank"}.
+- GitHub: [https://github.com/olsdavis/gfm](https://github.com/olsdavis/gfm){:target="_blank"}.
+![Generalised Flow Maps, Earth plot.](/assets/gfm_intro_fig.png)
 
 ## [FORT: Forward-Only Regression Training of Normalizing Flows](https://arxiv.org/abs/2506.01158){:target="_blank"}
 - Rehman, D., **Davis, O.**, Lu, J., Tang, J., Bronstein, M., Bengio, Y., Tong, A., Bose, J.
 - ICML 2025 GenBio (**best paper award**).
+- arXiv: [https://arxiv.org/abs/2506.01158](https://arxiv.org/abs/2506.01158){:target="_blank"}
 ![FORT, Ramachandran plot.](/assets/fort_rama.png)
 
 ## [SOAPI](https://openreview.net/pdf?id=aRrXs2cVdy){:target="_blank"} and [SOAPIA](https://openreview.net/pdf?id=Ax25SLlDsN){:target="_blank"}
@@ -29,7 +32,9 @@ I hold a **BSc in Computer Science from EPFL** with an exchange year at Imperial
 
 ## [Fisher Flow Matching for Generative Modeling over Discrete Data](https://arxiv.org/abs/2405.14664){:target="_blank"}
 - **Davis, O.**, Kessler, S., Petrache, M., Ceylan, İ., Bronstein, M., Bose, AJ.
-- NeurIPS 2024. Preprint at: [https://arxiv.org/abs/2405.14664](https://arxiv.org/abs/2405.14664).
+- NeurIPS 2024.
+- arXiv: [https://arxiv.org/abs/2405.14664](https://arxiv.org/abs/2405.14664){:target="_blank"}.
+- GitHub: [https://github.com/olsdavis/fisher-flow](https://github.com/olsdavis/fisher-flow){:target="_blank"}.
 ![Fisher Flow Matching summary.](/assets/fisher_flow.png)
 
 # Projects
