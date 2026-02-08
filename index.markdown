@@ -4,9 +4,9 @@
 
 layout: main
 ---
-Hi, I'm Oscar Davis, a third year PhD student in Machine Learning at the **University of Oxford**, supervised by [Prof Michael Bronstein](https://www.cs.ox.ac.uk/people/michael.bronstein/), [Dr İsmail Ceylan](https://www.cs.ox.ac.uk/people/ismaililkan.ceylan/), and [Dr Joey Bose](https://joeybose.github.io/). My funding is generously provided by both [Project CETI](https://www.projectceti.org/) and Intel. My work primarily focuses on **generative modelling**.
+Hi, I'm Oscar Davis, a third year PhD student in Machine Learning at the **University of Oxford**, supervised by [Prof Michael Bronstein](https://www.cs.ox.ac.uk/people/michael.bronstein/){:target="_blank"}, [Dr İsmail Ceylan](https://www.cs.ox.ac.uk/people/ismaililkan.ceylan/){:target="_blank"}, and [Dr Joey Bose](https://joeybose.github.io/){:target="_blank"}. My funding is generously provided by both [Project CETI](https://www.projectceti.org/){:target="_blank"} and Intel. My work primarily focuses on **generative modelling**.
 
-From November 2023 until February 2024, I interned with **Microsoft Research, Cambridge**, where I worked on diffusion models, stable diffusion, and briefly neural ODEs. We did some internal theoretical work on these, analysing their SDEs and ODEs. (Patented.)
+I am starting as a **Research Intern at Apple MLR, Paris**, in March 2026, under the supervision of [Prof Marco Cuturi](https://marcocuturi.net/){:target="_blank"}. From November 2023 until February 2024, I interned with **Microsoft Research, Cambridge**, where I worked on diffusion models, stable diffusion, and briefly neural ODEs. We did some internal theoretical work on these, analysing their SDEs and ODEs. (Patented.)
 
 I hold a **BSc in Computer Science from EPFL** with an exchange year at Imperial College London, and an **MSc in Advanced Computer Science** from the **University of Oxford**. I was also awarded the **Tony Hoare Prize** for the **best MSc thesis of the year**, *Information Theoretic Perspectives on Graph Neural Networks*.
 
@@ -14,14 +14,14 @@ I hold a **BSc in Computer Science from EPFL** with an exchange year at Imperial
 
 ## [Generalised Flow Maps for Few-Step Generative Modelling on Riemannian Manifolds](https://arxiv.org/abs/2510.21608){:target="_blank"}
 - **Davis, O.**, Boffi, N., Albergo, M., Bronstein, M., Bose, J.
-- NeurIPS 2025 FPI.
+- ICLR 2026. NeurIPS 2025 FPI.
 - arXiv: [https://arxiv.org/abs/2510.21608](https://arxiv.org/abs/2510.21608){:target="_blank"}.
 - GitHub: [https://github.com/olsdavis/gfm](https://github.com/olsdavis/gfm){:target="_blank"}.
 ![Generalised Flow Maps, Earth plot.](/assets/gfm_intro_fig.png)
 
 ## [FORT: Forward-Only Regression Training of Normalizing Flows](https://arxiv.org/abs/2506.01158){:target="_blank"}
 - Rehman, D., **Davis, O.**, Lu, J., Tang, J., Bronstein, M., Bengio, Y., Tong, A., Bose, J.
-- ICML 2025 GenBio (**best paper award**).
+- ICLR 2026. ICML 2025 GenBio (**best paper award**).
 - arXiv: [https://arxiv.org/abs/2506.01158](https://arxiv.org/abs/2506.01158){:target="_blank"}
 ![FORT, Ramachandran plot.](/assets/fort_rama.png)
 
