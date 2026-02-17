@@ -12,6 +12,12 @@ I hold a **BSc in Computer Science from EPFL** with an exchange year at Imperial
 
 # Publications
 
+## [Categorical Flow Maps](https://arxiv.org/abs/2602.12233){:target="_blank"}
+- Roos, D.\*, **Davis, O.\***, Eijkelboom, F.\*, Bronstein, M., Welling, M., Ceylan, I., Ambrogioni, L., van de Meent, J.W.
+- arXiv: [https://arxiv.org/abs/2602.12233](https://arxiv.org/abs/2602.12233){:target="_blank"}.
+- GitHub: [https://github.com/olsdavis/semicat](https://github.com/olsdavis/semicat){:target="_blank"}.
+![Categorical Flow Maps, overview.](/assets/cfm_overview.png)
+
 ## [Generalised Flow Maps for Few-Step Generative Modelling on Riemannian Manifolds](https://arxiv.org/abs/2510.21608){:target="_blank"}
 - **Davis, O.**, Boffi, N., Albergo, M., Bronstein, M., Bose, J.
 - ICLR 2026. NeurIPS 2025 FPI.
