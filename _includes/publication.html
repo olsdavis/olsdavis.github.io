@@ -1,0 +1,84 @@
+<article class="publication">
+  <div class="publication-copy">
+    {% if publication.meta %}
+      <div class="publication-meta">
+        {% for item in publication.meta %}
+          <span>{{ item }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <h2 class="publication-title">
+      <a href="{{ publication.url }}" target="_blank" rel="noopener">{{ publication.title }}</a>
+    </h2>
+
+    <p class="publication-authors">
+      {{ publication.authors | replace: "Davis, O.", "<strong>Davis, O.</strong>" }}
+    </p>
+
+    {% if publication.abstract and publication.abstract != "" %}
+      {% assign abstract_teaser = publication.abstract | strip | truncatewords: 46 %}
+      <div class="publication-abstract">
+        <p class="publication-abstract-teaser">{{ abstract_teaser }}</p>
+        <details class="publication-abstract-details">
+          <summary>
+            <span class="summary-closed">Abstract</span>
+            <span class="summary-open">Hide abstract</span>
+          </summary>
+          <div class="publication-abstract-body">
+            {{ publication.abstract | newline_to_br }}
+          </div>
+        </details>
+      </div>
+    {% endif %}
+
+  </div>
+
+  {% if publication.media and include.featured %}
+    <div class="publication-figure publication-figure-grid" aria-label="{{ publication.title }}">
+      {% for item in publication.media %}
+        <a class="publication-media-item" href="{{ publication.url }}" target="_blank" rel="noopener" aria-label="{{ item.alt | default: publication.title }}">
+          {% if item.video %}
+            <video autoplay muted loop playsinline preload="metadata" poster="{{ item.image | relative_url }}" aria-label="{{ item.alt | default: publication.title }}">
+              <source src="{{ item.video | relative_url }}" type="video/mp4">
+              <img src="{{ item.image | relative_url }}" alt="{{ item.alt | default: publication.title }}">
+            </video>
+          {% else %}
+            <img src="{{ item.image | relative_url }}" alt="{{ item.alt | default: publication.title }}">
+          {% endif %}
+        </a>
+      {% endfor %}
+    </div>
+  {% elsif publication.media %}
+    {% assign item = publication.media | first %}
+    <a class="publication-figure" href="{{ publication.url }}" target="_blank" rel="noopener" aria-label="{{ item.alt | default: publication.title }}">
+      {% if item.video %}
+        <video autoplay muted loop playsinline preload="metadata" poster="{{ item.image | relative_url }}" aria-label="{{ item.alt | default: publication.title }}">
+          <source src="{{ item.video | relative_url }}" type="video/mp4">
+          <img src="{{ item.image | relative_url }}" alt="{{ item.alt | default: publication.title }}">
+        </video>
+      {% else %}
+        <img src="{{ item.image | relative_url }}" alt="{{ item.alt | default: publication.title }}">
+      {% endif %}
+    </a>
+  {% elsif publication.image %}
+    <a class="publication-figure" href="{{ publication.url }}" target="_blank" rel="noopener" aria-label="{{ publication.title }}">
+      {% if publication.video %}
+        <video autoplay muted loop playsinline preload="metadata" poster="{{ publication.image | relative_url }}" aria-label="{{ publication.image_alt }}">
+          <source src="{{ publication.video | relative_url }}" type="video/mp4">
+          <img src="{{ publication.image | relative_url }}" alt="{{ publication.image_alt }}">
+        </video>
+      {% else %}
+        <img src="{{ publication.image | relative_url }}" alt="{{ publication.image_alt }}">
+      {% endif %}
+    </a>
+  {% endif %}
+
+  {% if publication.links %}
+    <div class="publication-links" aria-label="Publication links">
+      {% for link in publication.links %}
+        <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
+      {% endfor %}
+    </div>
+  {% endif %}
+</article>

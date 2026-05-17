@@ -1,0 +1,23 @@
+- label: "Email"
+  url: "mailto:oscar.davis@cs.ox.ac.uk"
+  icon: "mail"
+
+- label: "Scholar"
+  url: "https://scholar.google.com/citations?user=TvzgGj8AAAAJ&hl=en"
+  icon: "graduation-cap"
+
+- label: "X"
+  url: "https://x.com/osclsd"
+  icon: "x"
+
+- label: "GitHub"
+  url: "https://github.com/olsdavis"
+  icon: "github"
+
+- label: "LinkedIn"
+  url: "https://www.linkedin.com/in/olsdavis/"
+  icon: "linkedin"
+
+- label: "CV"
+  url: "/assets/cv.pdf"
+  icon: "file-text"

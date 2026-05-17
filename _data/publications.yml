@@ -1,0 +1,153 @@
+- title: "Scaling Categorical Flow Maps"
+  selected: true
+  url: https://arxiv.org/abs/2605.07820
+  authors: Davis, O., Filippova, A., Ablin, P., Turrisi, V., Shidani, A., Cuturi, M., Béthune, L.
+  abstract: >
+    Continuous diffusion and flow matching models could represent a powerful alternative to autoregressive approaches for language modelling (LM), as they unlock a host of advantages currently reserved for continuous modalities, including accelerated sampling and tilting. Recently, several works have demonstrated the possibility of generating discrete data continuously by a simple flow matching process between a Gaussian and the one-hot encoded data distribution. They have further shown the feasibility of accelerated sampling via Categorical Flow Maps (CFMs), resulting in competitive sample quality in the few-step regime. However, this method had only been evaluated at relatively modest scales (<1B), leaving the question of its scalability completely open. In this article, we train a 1.7B-parameter base flow model on 2.1T tokens and self-distill it into a CFM that generates diverse, high-quality text in as few as 4 inference steps while maintaining near-data-level token entropy. Furthermore, we introduce a likelihood bound for CFMs in the semi-discrete setting, and show that they can be used to score the model on standard LM benchmarks, achieving results in the same range as discrete diffusion methods. Finally, we uncover some of the challenges that arise from training these models at scale, and we provide prescriptive insights on loss weighting and time scheduling.
+  meta:
+    - Pre-print
+  links:
+    - label: arXiv
+      url: https://arxiv.org/abs/2605.07820
+  image: /assets/scaling_cfm.png
+  image_alt: Scaling Categorical Flow Maps, main figure.
+  
+
+- title: "Categorical Flow Maps"
+  selected: true
+  url: "https://arxiv.org/abs/2602.12233"
+  authors: "Roos, D.*, Davis, O.*, Eijkelboom, F.*, Bronstein, M., Welling, M., Ceylan, I., Ambrogioni, L., van de Meent, J.W."
+  abstract: >
+    We introduce Categorical Flow Maps, a flow-matching method for accelerated few-step generation of categorical data via self-distillation. Building on recent variational formulations of flow matching and the broader trend towards accelerated inference in diffusion and flow-based models, we define a flow map towards the simplex that transports probability mass toward a predicted endpoint, yielding a parametrisation that naturally constrains model predictions. Since our trajectories are continuous rather than discrete, Categorical Flow Maps can be trained with existing distillation techniques, as well as a new objective based on endpoint consistency. This continuous formulation also automatically unlocks test-time inference: we can directly reuse existing guidance and reweighting techniques in the categorical setting to steer sampling toward downstream objectives. Empirically, we achieve state-of-the-art few-step results on images, molecular graphs, and text, with strong performance even in single-step generation.
+  meta:
+    - "ICML 2026"
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2602.12233"
+    - label: "Code"
+      url: "https://github.com/olsdavis/semicat"
+  video: "/assets/cfm_animation.mp4"
+  image: "/assets/cfm_overview.png"
+  image_alt: "Categorical Flow Maps, overview."
+
+- title: "Generalised Flow Maps for Few-Step Generative Modelling on Riemannian Manifolds"
+  selected: false
+  url: "https://arxiv.org/abs/2510.21608"
+  authors: "Davis, O., Boffi, N., Albergo, M., Bronstein, M., Bose, J."
+  abstract: >
+    Geometric data 
+    and purpose-built generative models on them have become ubiquitous in high-impact deep learning application domains, ranging from protein backbone generation and computational chemistry to geospatial data. 
+    Current geometric generative models remain computationally expensive at inference---requiring many steps of complex numerical simulation---as they are derived from dynamical measure transport frameworks such as diffusion and flow-matching on Riemannian manifolds. In this paper, we propose Generalised Flow Maps (GFM), a new class of few-step generative models that generalises the Flow Map framework in Euclidean spaces
+    to arbitrary Riemannian manifolds. We instantiate GFMs with three self-distillation-based training methods: Generalised Lagrangian Flow Maps, Generalised Eulerian Flow Maps, and Generalised Progressive Flow Maps. We theoretically show that GFMs, under specific design decisions, unify and elevate existing Euclidean few-step generative models, such as consistency models, shortcut models, and meanflows, to the Riemannian setting. We benchmark GFMs against other geometric generative models on a suite of geometric datasets, including geospatial data, RNA torsion angles, and hyperbolic manifolds, and   
+    achieve state-of-the-art sample quality for single- and few-step evaluations, and superior or competitive log-likelihoods using the implicit probability flow.
+  meta:
+    - "ICLR 2026"
+    - "NeurIPS 2025 FPI"
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2510.21608"
+    - label: "Code"
+      url: "https://github.com/olsdavis/gfm"
+  video: "/assets/generalised_flow_maps.mp4"
+  image: "/assets/gfm_intro_fig.png"
+  image_alt: "Generalised Flow Maps, Earth plot."
+
+- title: "FORT: Forward-Only Regression Training of Normalizing Flows"
+  selected: false
+  url: "https://arxiv.org/abs/2506.01158"
+  authors: "Rehman, D., Davis, O., Lu, J., Tang, J., Bronstein, M., Bengio, Y., Tong, A., Bose, J."
+  abstract: >
+    Simulation-free training frameworks have been at the forefront of the generative modeling revolution in continuous spaces, leading to neural dynamical systems that encompass modern large-scale diffusion and flow-matching models. Despite the scalability of training, the generation of high-quality samples and their corresponding likelihood under the model requires expensive numerical simulation---inhibiting adoption in numerous scientific applications such as equilibrium sampling of molecular systems. In this paper, we revisit classical normalizing flows as one-step generative models with exact likelihoods and propose a novel, scalable training objective that does not require computing the expensive change of variable formula used in conventional maximum likelihood training. We propose Forward-Only Regression Training (FORT), a simple -regression objective that maps prior samples under our flow to specifically chosen targets. We demonstrate that FORT supports a wide class of targets, such as optimal transport targets and targets from pre-trained continuous-time normalizing flows (CNF). We further demonstrate that by using CNF targets, our one-step flows allow for larger-scale training that \emph{exceeds} the performance and stability of maximum likelihood training, while unlocking a broader class of architectures that were previously challenging to train. Empirically, we elucidate that our trained flows can perform equilibrium conformation sampling in Cartesian coordinates of alanine dipeptide, alanine tripeptide, and alanine tetrapeptide.
+  meta:
+    - "ICLR 2026"
+    - "ICML 2025 GenBio – Best paper award"
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2506.01158"
+  image: "/assets/fort_rama.png"
+  image_alt: "FORT, Ramachandran plot."
+
+- title: "SOAPIA"
+  selected: false
+  url: "https://openreview.net/pdf?id=aRrXs2cVdy"
+  authors: "Vincoff, S.*, Davis, O.*, Ceylan, İ., Tong, A., Bose, J., Chatterjee, P."
+  abstract: >
+    Therapeutic molecules must selectively interact with a target protein while avoiding structurally or functionally similar off-targets. However, no existing generative strategy explicitly optimizes both target affinity and off-target avoidance. To address this, we introduce SOAPIA, a framework for the Siamese-guided generation of Off-target-Avoiding Protein Interactions with high target Affinity. SOAPIA generates de novo peptide binders by steering the generative process of a Diffusion Protein Language Model (DPLM) using a multi-objective Monte Carlo Tree Search (MCTS). Affinity is optimized via a pre-trained predictor, while specificity is enforced using a Siamese model trained with an adaptive Log-Sum-Exp Decoy Loss. This dual-guidance scheme enables Pareto-efficient exploration of discrete sequence space without gradient access. In benchmarks across 17 fusion oncoproteins, SOAPIA consistently identifies binders with strong affinity and high selectivity. For multiple clinically relevant targets, SOAPIA generated peptides that preferentially bind the fusion by engaging both its head and tail domains, while avoiding the wild-type counterparts. These results underscore SOAPIA's promise for designing safe, specific biologics for fusion-driven cancers and other rare, currently untreatable diseases.
+  meta:
+    - "ICML 2025 FM4LS"
+  links:
+    - label: "OpenReview"
+      url: "https://openreview.net/pdf?id=Ax25SLlDsN"
+  image: "/assets/soapia_results.png"
+  image_alt: "SOAPIA results."
+
+- title: "SOAPI"
+  selected: false
+  url: "https://openreview.net/pdf?id=mUp7mfNfXz"
+  authors: "Vincoff, S., Davis, O., Tong, A., Bose, J., Chatterjee, P."
+  abstract: >
+    Therapeutics that modulate pathogenic proteins while avoiding off-target
+    interactions are essential for effective drug design. However, designing binders that
+    selectively engage a target protein while minimizing interactions with structurally
+    or functionally similar proteins remains a major challenge. To address this, we
+    introduce a Siamese-guided strategy for the generation of Off target-Avoiding
+    Protein Interactions, termed SOAPI. SOAPI leverages a Siamese protein language
+    model with an adaptive Log-Sum-Exp Decoy Loss to enforce specificity by
+    embedding fusion-specific binders close to their target while maintaining separation
+    from off-targets. These optimized embeddings then guide a diffusion protein
+    language model (DPLM), which generates binders using soft-value-based decoding
+    (SVDD) and Sequential Monte Carlo resampling to iteratively refine candidates.
+    In silico validation demonstrates significant off-target avoidance, highlighting
+    SOAPI's potential for generating precise and selective protein interactions.
+  meta:
+    - "ICML 2025 FM4LS"
+  links:
+    - label: "OpenReview"
+      url: "https://openreview.net/pdf?id=Ax25SLlDsN"
+  image: "/assets/soapi.png"
+  image_alt: "SOAPI, main figure."
+
+- title: "Fisher Flow Matching for Generative Modeling over Discrete Data"
+  selected: true
+  url: "https://arxiv.org/abs/2405.14664"
+  authors: "Davis, O., Kessler, S., Petrache, M., Ceylan, İ., Bronstein, M., Bose, J."
+  abstract: >
+    Generative modeling over discrete data has recently seen numerous success
+    stories, with applications spanning language modeling, biological sequence
+    design, and graph-structured molecular data. The predominant generative
+    modeling paradigm for discrete data is still autoregressive, with more
+    recent alternatives based on diffusion or flow-matching falling short of
+    their impressive performance in continuous data settings, such as image or
+    video generation. In this work, we introduce Fisher-Flows, a novel
+    flow-matching model for discrete data. Fisher-Flows takes a manifestly
+    geometric perspective by considering categorical distributions over discrete
+    data as points residing on a statistical manifold equipped with its natural
+    Riemannian metric: the Fisher-Rao metric. As a result, we demonstrate that
+    discrete data itself can be continuously reparameterised to points on the
+    positive orthant of the \(d\)-hypersphere \(\mathbb{S}^d_+\), which allows
+    us to define flows that map any source distribution to target in a
+    principled manner by transporting mass along (closed-form) geodesics of
+    \( \mathbb{S}^d_+ \). Furthermore, the learned flows in Fisher-Flows can be
+    further bootstrapped by leveraging Riemannian optimal transport leading to
+    improved training dynamics. We prove that the gradient flow induced by
+    Fisher-Flows is optimal in reducing the forward KL divergence. We evaluate
+    Fisher-Flows on an array of synthetic and diverse real-world benchmarks,
+    including designing DNA Promoter, and DNA Enhancer sequences. Empirically,
+    we find that Fisher-Flows improves over prior diffusion and flow-matching
+    models on these benchmarks.
+  meta:
+    - "NeurIPS 2024"
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2405.14664"
+    - label: "Code"
+      url: "https://github.com/olsdavis/fisher-flow"
+  media:
+    - video: "/assets/simplex_flow_out.mp4"
+      image: "/assets/simplex_flow_out.jpg"
+      alt: "Fisher Flow Matching simplex flow animation."
+    - video: "/assets/fisher_rao_simplex.mp4"
+      image: "/assets/fisher_flow.png"
+      alt: "Fisher-Rao simplex geodesic animation."
+  image: "/assets/simplex_flow_out.jpg"
+  image_alt: "Fisher Flow Matching summary."
