@@ -7,11 +7,11 @@ layout: main
 <section class="home-section intro-section" markdown="1">
 I'm a third year PhD student in Machine Learning at the **University of Oxford**, supervised by [Prof Michael Bronstein](https://www.cs.ox.ac.uk/people/michael.bronstein/){:target="_blank"}, [Dr İsmail Ceylan](https://www.cs.ox.ac.uk/people/ismaililkan.ceylan/){:target="_blank"}, and [Dr Joey Bose](https://joeybose.github.io/){:target="_blank"}. I am currently interning at **Apple MLR** under the supervision of [Prof Marco Cuturi](https://marcocuturi.net/){:target="_blank"}.
 
-My work primarily focuses on **generative modelling**. In particular, I am most interested in:
+My work primarily focuses on **generative modelling**, especially **continuous diffusion language models** (CDLMs). I am exploring how they can make language models faster, more efficient, and more controllable. Topics of interest include:
 
-- Diffusion & flow matching;
-- Accelerated methods (*e.g.*, flow maps), and controlled generation;
-- Continuous processes for language generation (Categorical Flow Maps).
+- Fundamental research on CDLMs and their design space;
+- Accelerated methods (*e.g.*, Flow Maps);
+- Controllable generation.
 </section>
 
 <section class="home-section bio-section" markdown="1">
