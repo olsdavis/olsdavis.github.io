@@ -1,3 +1,18 @@
+- title: "On the Design Space of Continuous Diffusion Language Models"
+  selected: true
+  url: https://arxiv.org/abs/2610.13834
+  authors: Davis, O., Roos, D., Bizeul, A., Shidani, A., Turrisi, V., Béthune, L., Ablin, P., Cuturi, M.
+  abstract: >
+    Continuous diffusion language models offer accelerated sampling and controllable generation, but the design choices behind their performance remain poorly understood. We study self-conditioning and embedding geometry, showing that self-conditioning reduces a mismatch between training and inference. Our two-level interpolant, DoubleCat, recovers these benefits without an additional forward pass and more than triples TinyGSM accuracy. Adding discrete reveals yields SemiCat, which addresses token identifiability and reaches 49.94% on TinyGSM with a tuned sampler. At 1.7B parameters, SemiCat surpasses discrete diffusion on four of six likelihood-based evaluations and outperforms one-hot flows on unconditional generation. We also investigate how cross-entropy shapes embedding geometry and explore hybrid corruption processes and noise schedules to clarify the design space of continuous diffusion language models.
+  meta:
+    - Pre-print
+  links:
+    - label: arXiv
+      url: https://arxiv.org/abs/2610.13834
+  video: /assets/design-space-vid.mp4
+  image: /assets/design-space-poster.jpg
+  image_alt: On the Design Space of Continuous Diffusion Language Models, overview animation.
+
 - title: "Scaling Categorical Flow Maps"
   selected: true
   url: https://arxiv.org/abs/2605.07820
